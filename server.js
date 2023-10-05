@@ -28,7 +28,7 @@ app.post("/save-subscription", async (req, res) => {
     res.sendStatus(200);
 });
 
-app.use("*", (req, res) => {
+app.get("/", (req, res) => {
     res.json({
         msg: "Hello",
     });
